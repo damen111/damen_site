@@ -1,0 +1,12 @@
+from .views import *
+from django.urls import path
+
+urlpatterns = [
+    path('', home, name='home'),
+    path('phase1/', phase1, name='phase1'),
+    path('phase2/', phase2, name='phase2'),
+    path('phase3/', phase3, name='phase3'),
+    path('phase4/', phase4, name='phase4'),
+    path('phase5/', phase5, name='phase5'),
+    path('phase6/', phase6, name='phase6'),
+]
