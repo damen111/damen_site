@@ -15,3 +15,6 @@ def phase5(request):
     return render(request, 'phase5.html')
 def phase6(request):
     return render(request, 'phase6.html')
+
+def info(request):
+    return render(request, 'info.html')
