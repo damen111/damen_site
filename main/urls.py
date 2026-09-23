@@ -9,5 +9,8 @@ urlpatterns = [
     path('phase4/', phase4, name='phase4'),
     path('phase5/', phase5, name='phase5'),
     path('phase6/', phase6, name='phase6'),
+
     path('info/', info, name='info'),
+
+    path('movie/', movie, name='movie'),
 ]

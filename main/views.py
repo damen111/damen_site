@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Movie
 
 def home(request):
     return render(request, 'home.html')
@@ -18,3 +19,7 @@ def phase6(request):
 
 def info(request):
     return render(request, 'info.html')
+
+def movie(request):
+    movies = Movie.objects.all()
+    return render(request, 'movie.html', {'movies': movies})

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+</head>
+<body>
+    <h1>Фильмы Марвел</h1>
+
+    {% for movie in movies %}
+        <div class="card">
+            <h2>{{ movie.title }} ({{ movie.year }})</h2>
+            <p>{{ movie.description }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
