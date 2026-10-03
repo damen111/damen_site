@@ -1,11 +1,13 @@
 from django.shortcuts import render
-from .models import Movie
+from .models import *
+
 
 def home(request):
     return render(request, 'home.html')
 
 def phase1(request):
-    return render(request, 'phase1.html')
+    movie1 = Phase1.objects.all()
+    return render(request, 'phase1.html', {'movie1': movie1})
 def phase2(request):
     return render(request, 'phase2.html')
 def phase3(request):
@@ -19,7 +21,3 @@ def phase6(request):
 
 def info(request):
     return render(request, 'info.html')
-
-def movie(request):
-    movies = Movie.objects.all()
-    return render(request, 'movie.html', {'movies': movies})

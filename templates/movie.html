@@ -1,22 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Movie</title>
-</head>
-<body>
-    <h1>Фильмы Марвел</h1>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Movie</title>-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1 class="text-center">Фильмы Марвел</h1>-->
 
-    {% for movie in movies %}
-    <div class="card">
-        {% if movie.image %}
-            <img src="{{ movie.image.url }}" width="1000">
-        {% endif %}
-        <div class="card-body">
-            <h3 class="card-title">{{ movie.title }} ({{ movie.year }})</h3>
-            <p class="card-text">{{ movie.description }}</p>
-        </div>
-    </div>
-    {% endfor %}
-</body>
-</html>
+<!--    <div class="row">-->
+<!--    {% for movie in movies %}-->
+<!--        <div class="col-md-6 col-lg-4 mb-4">-->
+<!--            <div class="card h-50">-->
+<!--                {% if movie.image %}-->
+<!--                    <img-->
+<!--                        src="{{ movie.image.url }}"-->
+<!--                        class="card-img-top"-->
+<!--                        alt="{{ movie.title }}"-->
+<!--                    >-->
+<!--                {% endif %}-->
+<!--                <div class="card-body">-->
+<!--                    <h4 class="card-title fw-bold">-->
+<!--                        {{ movie.title }} ({{ movie.year }})-->
+<!--                    </h4>-->
+<!--                    <p class="card-text">-->
+<!--                        {{ movie.description }}-->
+<!--                    </p>-->
+<!--                    {% if movie.video %}-->
+<!--                        <button-->
+<!--                            class="btn btn-outline-danger"-->
+<!--                            type="button"-->
+<!--                            data-bs-toggle="collapse"-->
+<!--                            data-bs-target="#movieVideo{{ movie.id }}"-->
+<!--                        >-->
+<!--                            Смотреть-->
+<!--                        </button>-->
+<!--                        <div class="collapse mt-3" id="movieVideo{{ movie.id }}">-->
+<!--                            <video controls class="w-100">-->
+<!--                                <source src="{{ movie.video.url }}" type="video/mp4">-->
+<!--                            </video>-->
+<!--                        </div>-->
+<!--                    {% endif %}-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    {% endfor %}-->
+<!--    </div>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>-->
+<!--</body>-->
+<!--</html>-->

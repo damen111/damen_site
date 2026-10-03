@@ -13,8 +13,6 @@ urlpatterns = [
     path('phase6/', phase6, name='phase6'),
 
     path('info/', info, name='info'),
-
-    path('movie/', movie, name='movie'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
