@@ -13,42 +13,120 @@
     <section class="py-3">
         <div class="container">
             <div class="row g-3">
-                {% for movie in movie1 %}
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card h-50">
-                            {% if movie.image %}
-                                <img
-                                    src="https://static.hdrezka.ac/i/2022/2/14/o11d6b3d6569btj69h46v.jpeg"
-                                    class="card-img-top"
-                                    alt="{{ movie.title }}"
-                                >
-                            {% endif %}
-                            <div class="card-body">
-                                <h4 class="card-title fw-bold">
-                                    {{ movie.title }} ({{ movie.year }})
-                                </h4>
-                                <p class="card-text">
-                                    {{ movie.description }}
-                                </p>
-                                {% if movie.video %}
-                                    <button
-                                        class="btn btn-outline-danger"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#movieVideo{{ movie.id }}"
-                                    >
-                                        Смотреть
-                                    </button>
-                                    <div class="collapse mt-3" id="movieVideo{{ movie.id }}">
-                                        <video controls class="w-100">
-                                            <source src="{{ movie.video.url }}" type="video/mp4">
-                                        </video>
-                                    </div>
-                                {% endif %}
-                            </div>
+            <!--1-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img
+                                src="https://static.hdrezka.ac/i/2022/2/14/o11d6b3d6569btj69h46v.jpeg"
+                                class="card-img-top"
+                                alt="not found"
+                        >
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Железный человек (2008)
+                            </h4>
+                            <p>Фильм</p>
+                            <a href="https://hdrezka-home.tv/films/action/242-zheleznyy-chelovek-2008.html" class="btn btn-outline-danger">
+                                Смотреть
+                            </a>
                         </div>
                     </div>
-            {% endfor %}
+                </div>
+            <!--2-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img
+                                src="https://static.hdrezka.ac/i/2022/4/16/pc346e59d7225za70v44j.jpeg"
+                                class="card-img-top"
+                                alt="not found"
+                        >
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Невероятный Халк (2008)
+                            </h4>
+                            <p>Фильм</p>
+                            <a href="https://hdrezka-home.tv/films/action/754-neveroyatnyy-halk-2008.html" class="btn btn-outline-danger">
+                                Смотреть
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!--3-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img
+                                src="https://static.hdrezka.ac/i/2013/7/30/zedd61c8179e0jy12q12s.jpg"
+                                class="card-img-top"
+                                alt="not found"
+                        >
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Железный человек 2 (2010)
+                            </h4>
+                            <p>Фильм</p>
+                            <a href="https://hdrezka-home.tv/films/action/243-zheleznyy-chelovek-2-2010.html" class="btn btn-outline-danger">
+                                Смотреть
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!--4-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img
+                                src="https://static.hdrezka.ac/i/2013/6/14/gd103222ce40fhd78k59t.jpg"
+                                class="card-img-top"
+                                alt="not found"
+                        >
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Тор (2011)
+                            </h4>
+                            <p>Фильм</p>
+                            <a href="https://hdrezka-home.tv/films/fantasy/88-tor-2011.html" class="btn btn-outline-danger">
+                                Смотреть
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!--5-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img
+                                src="https://static.hdrezka.ac/i/2013/10/4/feb7a38516f3ecv18g59u.jpg"
+                                class="card-img-top"
+                                alt="not found"
+                        >
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Первый мститель (2011)
+                            </h4>
+                            <p>Фильм</p>
+                            <a href="https://hdrezka-home.tv/films/fiction/530-pervyy-mstitel-2011.html" class="btn btn-outline-danger">
+                                Смотреть
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!--6-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img
+                                src="https://static.hdrezka.ac/i/2013/7/5/gaddad3563483ef99l25c.jpg"
+                                class="card-img-top"
+                                alt="not found"
+                        >
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Мстители (2012)
+                            </h4>
+                            <p>Фильм</p>
+                            <a href="https://hdrezka-home.tv/films/fantasy/169-mstiteli-2012.html" class="btn btn-outline-danger">
+                                Смотреть
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -56,6 +134,5 @@
     <div class="p-4 text-center text-white" style="background-color: #800020;">
         <h3 class="fw-bold">Приятного просмотра!</h3>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
